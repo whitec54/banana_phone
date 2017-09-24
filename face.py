@@ -13,10 +13,10 @@ r = sr.Recognizer()
 mic_list = sr.Microphone.list_microphone_names()
 
 phone_numbers = {
-    "dante": "+19896197341",
-    "cam": "+19893508034",
-    "kyle":"+19898581840",
-    "ellen":"+2489304763"
+    "dante": "",
+    "cam": "",
+    "kyle":"",
+    "ellen":""
 }
 
 # multiple cascades: https://github.com/Itseez/opencv/tree/master/data/haarcascades
@@ -83,7 +83,7 @@ def opperation_banana():
     ask_for_name()
     name = listen()
     name = name.lower()
-    phone = "+2489304763"
+    phone = ""
 
     if name in phone_numbers:
         phone = phone_numbers[name]
